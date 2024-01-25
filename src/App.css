@@ -1,15 +1,15 @@
 #board {
-  width: 50%;
+  width: 57% ;
   height: 700px;
   padding: 20px 0;
   margin: auto;
-  border-left: 50px solid blue;
-  border-right: 50px solid blue;
+  border-left: 50px solid #212121;
+  border-right: 50px solid #212121;
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
   gap: 20px;
-  background: yellow;
+  background: #039BE5;
 }
 
 .slot {
@@ -17,11 +17,11 @@
   height: 100px;
   box-sizing: border-box;
   border-radius: 45%;
-  background: lightgray;
+  background: #CFD8DC;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: black;
+  color: #212121;
   font-size: 100px;
   font-family: sans-serif;
 }
