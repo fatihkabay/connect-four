@@ -31,3 +31,14 @@ h1 {
   font-family: sans-serif;
   font-size: 40px;
 }
+
+.slot img {
+  transition: 1s;
+}
+
+#playerDisplay {
+  font-family: sans-serif;
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 50px;
+}
