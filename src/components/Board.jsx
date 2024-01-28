@@ -114,11 +114,19 @@ function Board() {
 
   const handleClick = (e) => {
     const column = e.target.getAttribute("x");
-    const row = board.findIndex((rowArr, index) => {
+    let row = board.findIndex((rowArr, index) => {
       return rowArr[column] !== "" || index === board.length - 1;
     });
     if (row !== board.length - 1) row -= 1;
     if (board[row][column] !== "") row -= 1;
+
+    setGameOver(updateBoard(row, column, currPlayer));
+    
+    if (!gameOver) {
+      const currPlayerCopy = currPlayer;
+      setCurrPlayer(oppPlayer);
+      setOppPlayer(currPlayerCopy);
+    }
   };
 
   return (
